@@ -1,0 +1,31 @@
+# JSONPath Query Examples
+
+# Root element
+$
+
+# All user names
+$.users[*].name
+
+# First user's email
+$.users[0].email
+
+# Recursive search for all emails
+$..email
+
+# Filter active users
+$.users[?(@.active == true)].name
+
+# Get metadata
+$.metadata
+
+# Last user
+$.users[-1].name
+
+# All roles (flatten)
+$.users[*].roles[*]
+
+# Settings theme
+$.settings.theme
+
+# Users with admin role
+$.users[?(@.roles[0] == 'admin')].name

@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "name": "Alice",
+      "email": "alice@example.com",
+      "age": 30,
+      "active": true,
+      "roles": ["admin", "user"]
+    },
+    {
+      "name": "Bob",
+      "email": "bob@example.com",
+      "age": 25,
+      "active": false,
+      "roles": ["user"]
+    },
+    {
+      "name": "Charlie",
+      "email": "charlie@example.com",
+      "age": 35,
+      "active": true,
+      "roles": ["user", "editor"]
+    }
+  ],
+  "metadata": {
+    "total": 3,
+    "page": 1,
+    "per_page": 10,
+    "has_more": false
+  },
+  "settings": {
+    "theme": "dark",
+    "notifications": true,
+    "language": "en"
+  }
+}

@@ -1,0 +1,28 @@
+# JMESPath Query Examples
+
+# Extract all user names
+users[*].name
+
+# Get first user's email
+users[0].email
+
+# Filter active users
+users[?active==`true`].{name: name, email: email}
+
+# Count users
+length(users)
+
+# Get metadata
+metadata
+
+# Select specific fields from first user
+users[0].{name: name, age: age, roles: roles}
+
+# Filter by age
+users[?age > `25`].name
+
+# Get all roles (flatten)
+users[*].roles[]
+
+# Fallback value
+settings.timezone || `UTC`
