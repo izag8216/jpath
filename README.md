@@ -1,60 +1,7 @@
 # jpath
 
 <p align="center">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="200">
-    <defs>
-      <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
-      </linearGradient>
-      <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#0f3460;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#533483;stop-opacity:1" />
-      </linearGradient>
-      <filter id="glow">
-        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-        <feMerge>
-          <feMergeNode in="coloredBlur"/>
-          <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-      </filter>
-    </defs>
-    <rect width="800" height="200" fill="url(#bg)" rx="12"/>
-    <!-- JSON tree structure -->
-    <g opacity="0.15">
-      <circle cx="100" cy="100" r="4" fill="#e94560"/>
-      <circle cx="200" cy="60" r="4" fill="#e94560"/>
-      <circle cx="200" cy="140" r="4" fill="#e94560"/>
-      <circle cx="300" cy="40" r="4" fill="#e94560"/>
-      <circle cx="300" cy="80" r="4" fill="#e94560"/>
-      <circle cx="300" cy="160" r="4" fill="#e94560"/>
-      <line x1="100" y1="100" x2="200" y2="60" stroke="#e94560" stroke-width="1"/>
-      <line x1="100" y1="100" x2="200" y2="140" stroke="#e94560" stroke-width="1"/>
-      <line x1="200" y1="60" x2="300" y2="40" stroke="#e94560" stroke-width="1"/>
-      <line x1="200" y1="60" x2="300" y2="80" stroke="#e94560" stroke-width="1"/>
-      <line x1="200" y1="140" x2="300" y2="160" stroke="#e94560" stroke-width="1"/>
-    </g>
-    <!-- Magnifying glass -->
-    <g transform="translate(580, 70)" filter="url(#glow)">
-      <circle cx="30" cy="30" r="28" fill="none" stroke="#e94560" stroke-width="4"/>
-      <line x1="50" y1="50" x2="75" y2="75" stroke="#e94560" stroke-width="6" stroke-linecap="round"/>
-      <path d="M 20 25 L 25 20 L 35 30 L 30 35 Z" fill="#e94560" opacity="0.8"/>
-    </g>
-    <!-- Highlighted path -->
-    <g transform="translate(580, 70)">
-      <circle cx="30" cy="30" r="12" fill="#e94560" opacity="0.3"/>
-      <text x="30" y="34" text-anchor="middle" font-family="monospace" font-size="14" fill="#ffffff" font-weight="bold">$</text>
-    </g>
-    <!-- Title -->
-    <text x="400" y="90" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-1">jpath</text>
-    <!-- Description -->
-    <text x="400" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#a0a0b0" letter-spacing="0.5">JSON Path Query Tool</text>
-    <!-- Subtitle -->
-    <text x="400" y="160" text-anchor="middle" font-family="monospace" font-size="14" fill="#6c63ff">JMESPath  •  JSONPath  •  CLI</text>
-    <!-- Decorative brackets -->
-    <text x="180" y="95" font-family="monospace" font-size="48" fill="#6c63ff" opacity="0.6">{</text>
-    <text x="620" y="95" font-family="monospace" font-size="48" fill="#6c63ff" opacity="0.6">}</text>
-  </svg>
+  <img src="https://raw.githubusercontent.com/izag8216/jpath/main/docs/header.svg" alt="jpath - JSON Path Query Tool" width="100%" />
 </p>
 
 [![PyPI version](https://img.shields.io/badge/pypi-v0.1.0-blue.svg?style=flat-square)](https://pypi.org/project/jpath/)
